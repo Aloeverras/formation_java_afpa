@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: red_thread_entity
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-plateform: org.hibernate.dialect.PostgreSQLDialect
